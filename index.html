@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2? família= Poppins:wght@300;400;700 &family= Roboto:wght@400;700 & display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="tema">
+          <p>Formulário para compra de <br /><b> Pacote de adesivos</b></p>
+        </div>
+        <div class="img">
+          <img src="./images/logo.png" class="logo" />
+        </div>
+      </div>
+
+      <form id="form" class="form" name="formulario">
+        <div class="stickers">
+          <p class="Descrição"><b>Escolha seus adesivos:</b></p>
+
+          <input type="checkbox" name="react" id="react"  />
+          <label for="react">
+            <img src="./images/react.png" width="50px" />
+            <p>REACT</p>
+          </label>
+
+          <input type="checkbox" name="react" id="vue"  />
+          <label for="vue">
+            <img src="./images/vue.png" width="50px" />
+            <p>VUE</p>
+          </label>
+
+          <input type="checkbox" name="react" id="angular"  />
+          <label for="angular">
+            <img src="./images/angular.png" width="50px" />
+            <p>ANGULAR</p>
+          </label>
+
+          <input type="checkbox" name="react" id="node"  />
+          <label for="node">
+            <img src="./images/nodejs.png" width="50px" />
+            <p>NODE</p>
+          </label>
+
+          <input type="checkbox" name="react" id="js"  />
+          <label for="js">
+            <img src="./images/js.png" width="50px" />
+            <p>JAVASCRIPT</p>
+          </label>
+        </div>
+
+        <p><b>Quantos adesivos de cada?</b></p>
+
+        <div class="number">
+          <span class="next" onclick="nextNum()"></span>
+          <span class="prev" onclick="prevNum()"></span>
+          <div id="box"></div>
+        </div>
+
+        <p><b>Observações:</b></p>
+        <input
+          type="text"
+          class="textarea"
+          placeholder="Alguma Dúvida? Observação? Recado?"
+        />
+
+        <button type="submit" onclick="validar()">Enviar</button>
+      </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
